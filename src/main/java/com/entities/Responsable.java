@@ -1,9 +1,12 @@
 package com.entities;
 
-import javax.persistence.*;
-import java.util.ArrayList;
+import lombok.Data;
+
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 
 @Entity
+@Data
 public class Responsable extends Utilisateur {
 
 

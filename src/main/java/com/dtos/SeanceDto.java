@@ -1,20 +1,15 @@
-package com.entities;
+package com.dtos;
 
+import com.entities.Creneau;
 import lombok.Data;
 
-import javax.persistence.*;
-
-@Entity
 @Data
-public class Seance {
+public class SeanceDto {
 
-    @javax.persistence.Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
     private boolean estEffectue;
     private int dureeEffective;
     private boolean valide;
     private String commentaire;
-    @ManyToOne
     private Creneau creneauSeance;
 }
