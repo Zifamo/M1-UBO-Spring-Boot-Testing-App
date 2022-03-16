@@ -8,9 +8,6 @@ import javax.persistence.ManyToOne;
 @Entity
 @Data
 public class Responsable extends Utilisateur {
-
-
     @ManyToOne
     private Composante maComposante;
-
 }

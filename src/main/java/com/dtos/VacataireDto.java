@@ -1,13 +1,14 @@
 package com.dtos;
 
-import com.entities.Utilisateur;
+import com.entities.Cours;
+import com.entities.Seance;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-public class VacataireDto extends Utilisateur {
+public class VacataireDto extends UtilisateurDto {
 
-    private List<SeanceDto> lesSeances;
-    private CoursDto leCours;
+    private List<Seance> lesSeances;
+    private Cours leCours;
 }

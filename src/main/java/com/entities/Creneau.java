@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Data
@@ -17,4 +18,6 @@ public class Creneau {
     private Type typeCreneau;
     @ManyToOne
     private Cours lecours;
+    @OneToMany
+    private List<Seance> lesSeances;
 }
