@@ -1,6 +1,9 @@
 package com.demo;
 
-import com.entities.*;
+import com.entities.Creneau;
+import com.entities.Seance;
+import com.entities.Type;
+import com.entities.Vacataire;
 import com.repositories.CreneauRepository;
 import com.repositories.SeanceRepository;
 import com.repositories.VacataireRepository;
@@ -8,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @SpringBootTest
 class DemoApplicationTests {
@@ -49,7 +52,7 @@ class DemoApplicationTests {
 		uneSeance.setCommentaire(" ");
 		Creneau unCreneau = new Creneau();
 		unCreneau.setTypeCreneau(Type.CM);
-		unCreneau.setDate_heure(LocalDateTime.now());
+		unCreneau.setDate_heure(new Date());
 		creneauRepository.save(unCreneau);
 		uneSeance.setCreneauSeance(unCreneau);
 		seanceRepository.save(uneSeance);

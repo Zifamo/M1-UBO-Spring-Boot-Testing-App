@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "9f20cc78-e4ee-4d9b-8c7c-11742a46424e",
+		"name": "apiSpringBootTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cours",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"intitule\":\"Espagnol\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cours"
+					]
+				},
+				"description": "ajout d'un cours"
+			},
+			"response": []
+		},
+		{
+			"name": "cours",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"intitule\":\"Anglais\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cours",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"intitule\":\"Communication\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCoursById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cours/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cours",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCours",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cours/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cours",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creneau",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"duree\":\"2\",\n    \"typeCreneau\":\"TD\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/creneau",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"creneau"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vacataire",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"login\":\"bruce\",\n    \"motDePasse\":\"\",\n    \"nomUsuel\":\"Wayne\",\n    \"prenom\":\"Bruce\",\n    \"mail\":\"b.wayne@gotham.us\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/vacataire",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vacataire"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
